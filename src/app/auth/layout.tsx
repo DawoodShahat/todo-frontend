@@ -23,7 +23,7 @@ export default function AuthLayout({
             <div className="flex flex-col px-10 items-center justify-center">
               <h1 className="text-5xl mt-8 mb-3 text-black">CCRIPT - TODO</h1>
               <div className="underscore" />
-              <p className="text-xl mb-2">It's time to get things done</p>
+              <p className="text-xl mb-2">It&apos;s time to get things done</p>
             </div>
           </div>
         </div>
