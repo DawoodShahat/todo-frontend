@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 import Avatar from "@/components/Avatar";
 import TodoInput from "@/components/TodoInput";
@@ -11,7 +11,6 @@ import { getTodos } from "@/api";
 import Button from "@/components/ui/Button";
 
 export default function Todo() {
-  // const router = useRouter();
   const { user, logoutUser } = useAuth();
 
   const [loading, setLoading] = useState(true);
@@ -31,8 +30,6 @@ export default function Todo() {
   useEffect(() => {
     fetchTodos();
   }, []);
-
-  // if(user == null) return router.push('/auth/login');
 
   return (
     <main className="flex justify-center items-start mx-auto h-screen container border">
