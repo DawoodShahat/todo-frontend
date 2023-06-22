@@ -1,16 +1,16 @@
 "use client"
 import { useAuth } from "@/contexts/auth-context";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 export default function AuthLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const router = useRouter();
+  // const router = useRouter();
   const { user } = useAuth();
 
-  if(user != null) return router.push('/todo');
+  // if(user != null) return router.push('/todo');
 
   return (
     <html lang="en">
